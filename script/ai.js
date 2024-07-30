@@ -17,14 +17,14 @@ module.exports.run = async function({
 }) {
   const input = args.join(' ');
   if (!input) {
-    api.sendMessage(`Please provide a question or statement after 'ai'. For example: 'ai What is the capital of France?'`, event.threadID, event.messageID);
+    api.sendMessage(`salut , quel est votre question 👌'`, event.threadID, event.messageID);
     return;
   }
   api.sendMessage(`🔍 "${input}"`, event.threadID, event.messageID);
   try {
     const {
       data
-    } = await axios.get(`https://openaikey-x20f.onrender.com/api?prompt=${encodeURIComponent(input)}`);
+    } = await axios.get(`https://jonellccprojectapis10.adaptable.app/api/gpt4o?context=${encodeURIComponent(input)`);
     const response = data.response;
     api.sendMessage(response, event.threadID, event.messageID);
   } catch (error) {
