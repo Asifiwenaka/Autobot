@@ -1,122 +1,349 @@
 body {
-     padding: 20px;
-     background-color: #87CEEB;
-     font-family: 'Poppins', sans-serif;
+ background: #fff;
+		margin: auto;
+		padding: 20px;
+		
 }
- .container {
-     background-color: #0000FF;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     padding: 20px;
-     margin-top: 20px;
-     margin-bottom: 20px;
+
+@keyframes gradient {
+		0% {
+				background-position: 0% 0%;
+		}
+		50% {
+				background-position: 100% 100%;
+		}
+		100% {
+				background-position: 0% 0%;
+		}
+}
+
+.wave {
+		background: rgb(255 255 255 / 25%);
+		border-radius: 1000% 1000% 0 0;
+		position: fixed;
+		width: 200%;
+		height: 12em;
+		animation: wave 10s -3s linear infinite;
+		transform: translate3d(0, 0, 0);
+		opacity: 0.8;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+		bottom: -1.25em;
+		animation: wave 18s linear reverse infinite;
+		opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+		bottom: -2.5em;
+		animation: wave 20s -1s reverse infinite;
+		opacity: 0.9;
+}
+
+@keyframes wave {
+		2% {
+				transform: translateX(1);
+		}
+
+		25% {
+				transform: translateX(-25%);
+		}
+
+		50% {
+				transform: translateX(-50%);
+		}
+
+		75% {
+				transform: translateX(-25%);
+		}
+
+		100% {
+				transform: translateX(1);
+		}
+}
+
+.container {
+	   color: #FFFF;
+	   background: #000000;
+		 border-radius: 10px;
+		 padding: 20px;
+	   box-shadow: 0 0 .2rem #fff,0 0 .2rem #fff, 0 0 2rem #00c0ff,
+            0 0 0.8rem #00c0ff,
+            0 0 2.8rem #00c0ff,
+            inset 0 0 1.3rem #00c0ff;
+		 margin-top: 20px;
+		 margin-bottom: 20px;
+	 outline: 2px solid #FFFFFF;
 }
  h1 {
-     color: #343a40;
+		 color: #FFFFFF;
+		 font-size: 24px;
+		 margin-bottom: 15px;
 }
  label {
-     color: #90EE90;
+		 background-color: #FFFFFF;
+	   color: #343434;
+		 border-radius: 10px;
+		 font-weight: bold;
+		 margin-bottom: 5px;
+	   background-image: #FFFFFF;
 }
  .centered-textarea {
-     display: block;
-     margin: 0 auto;
-     width: 100%;
-     min-height: 150px;
-     padding: 10px;
-     box-sizing: border-box;
-     border: 1px solid #ced4da;
-     border-radius: 5px;
-     resize: none;
+		 color: #FFFFFF;
+		 display: flex;
+		 margin: 0 auto;
+		 width: 100%;
+		 min-height: 150px;
+		 padding: 10px;
+		 box-sizing: border-box;
+		 border: 1px solid #00ffff;
+		 border-radius: 5px;
+		 resize: none;
 }
  .btn-primary {
-     background-color: #007bff;
-     border: 1px solid #007bff;
+		 background-color: #007bff;
+		 border: 1px solid #007bff;
+	   color: #261a1a;
 }
  .btn-primary:hover {
-     background-color: #0056b3;
-     border: 1px solid #0056b3;
+		 background-color: #76d674;
+		 border: 1px solid #0056b3;
 }
  .success-message {
-     color: green;
-     margin-top: 10px;
+		 color: green;
+		 margin-top: 10px;
 }
  .footer {
-     background-color: rgba(255, 255, 255, 0.7);
-     padding: 10px;
-     text-align: center;
-     font-size: 16px;
-     color: #555;
-     margin-top: 50px;
-     border-top: 1px solid #ccc;
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     width: 100%;
+		 background-color: #E90207 46%,  #ff8c00 100%;
+		 padding: 10px;
+		 text-align: center;
+		 font-size: 16px;
+		 color: #FFFFFF;
+		 margin-top: 50px;
+		 border-top: 1px solid #blue;
+		 position: fixed;
+		 bottom: 0;
+		 left: 0;
+		 width: 100%;
 }
  .footer p {
-     margin: 0;
-     display: inline-block;
-     margin-right: 30px;
+		 margin: 0;
+		 display: inline-block;
+		 margin-right: 30px;
+body {
+ background: #fff;
+		margin: auto;
+		padding: 20px;
+		
+}
+
+@keyframes gradient {
+		0% {
+				background-position: 0% 0%;
+		}
+		50% {
+				background-position: 100% 100%;
+		}
+		100% {
+				background-position: 0% 0%;
+		}
+}
+
+.wave {
+		background: rgb(255 255 255 / 25%);
+		border-radius: 1000% 1000% 0 0;
+		position: fixed;
+		width: 200%;
+		height: 12em;
+		animation: wave 10s -3s linear infinite;
+		transform: translate3d(0, 0, 0);
+		opacity: 0.8;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+		bottom: -1.25em;
+		animation: wave 18s linear reverse infinite;
+		opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+		bottom: -2.5em;
+		animation: wave 20s -1s reverse infinite;
+		opacity: 0.9;
+}
+
+@keyframes wave {
+		2% {
+				transform: translateX(1);
+		}
+
+		25% {
+				transform: translateX(-25%);
+		}
+
+		50% {
+				transform: translateX(-50%);
+		}
+
+		75% {
+				transform: translateX(-25%);
+		}
+
+		100% {
+				transform: translateX(1);
+		}
+}
+
+.container {
+	   color: #FFFF;
+	   background: #000000;
+		 border-radius: 10px;
+		 padding: 20px;
+	   box-shadow: 0 0 .2rem #fff,0 0 .2rem #fff, 0 0 2rem #00FF00,
+            0 0 0.8rem #00FF00,
+            0 0 2.8rem #00FF00,
+            inset 0 0 1.3rem #00FF00;
+		 margin-top: 20px;
+		 margin-bottom: 20px;
+	 outline: 2px solid #FFFFFF;
+}
+ h1 {
+		 color: #FFFFFF;
+		 font-size: 24px;
+		 margin-bottom: 15px;
+}
+ label {
+		 background-color: #FFFFFF;
+	   color: #343434;
+		 border-radius: 10px;
+		 font-weight: bold;
+		 margin-bottom: 5px;
+	   background-image: #FFFFFF;
+}
+ .centered-textarea {
+		 color: #FFFFFF;
+		 display: flex;
+		 margin: 0 auto;
+		 width: 100%;
+		 min-height: 150px;
+		 padding: 10px;
+		 box-sizing: border-box;
+		 border: 1px solid #00ffff;
+		 border-radius: 5px;
+		 resize: none;
+}
+ .btn-primary {
+		 background-color: #00ff00;
+		 border: 1px solid #007bff;
+	   color: #261a1a;
+}
+ .btn-primary:hover {
+		 background-color: #76d674;
+		 border: 1px solid #0056b3;
+}
+ .success-message {
+		 color: green;
+		 margin-top: 10px;
+}
+ .footer {
+		 background-color: #E90207 46%,  #ff8c00 100%;
+		 padding: 10px;
+		 text-align: center;
+		 font-size: 16px;
+		 color: #FFFFFF;
+		 margin-top: 50px;
+		 border-top: 1px solid #blue;
+		 position: fixed;
+		 bottom: 0;
+		 left: 0;
+		 width: 100%;
+}
+ .footer p {
+		 margin: 0;
+		 display: inline-block;
+		 margin-right: 30px;
 }
  .container-buttons {
-     margin-top: 20px;
-     text-align: center;
+		 margin-top: 20px;
+		 text-align: center;
 }
  .container-buttons .btn {
-     margin: 5px;
+		 margin: 5px;
 }
 
  #result {
-     padding: 10px;
-     margin-top: 20px;
-     border-radius: 5px;
+		 padding: 10px;
+		 margin-top: 20px;
+		 border-radius: 5px;
 }
  .center-placeholder::placeholder {
-     text-align: center;
+		 text-align: center;
 }
 
 .form-check {
-  display: flex;
-  margin-top: 10px;
-  padding: 14px;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #ccc;
-  background-color: #fff;
+	display: flex;
+	margin-top: 10px;
+	padding: 14px;
+	align-items: center;
+	border: 1px solid #red;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, border-color 0.3s ease; 
+	border-color: #ccc;
+	background-color: #fff;
 }
 
 .form-check:hover {
-  background-color: #f0f0f0; 
-  border-color: #333; 
+	background-color: #f5f5; 
+	border-color: #f8f8f8; 
 }
 
 .form-check-input {
-  margin-right: 10px; 
-  opacity: 0;
+	margin-right: 10px; 
+	opacity: 0;
 }
 
 .disable {
-  display: none;
+	display: none;
 }
 
-#inputOfPrefix, #inputOfAdmin {
-  padding: 13px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #ccc;
-  background-color: #fff;
+#inputOfPrefix, #inputOfAdmin,
+#inputOfBotName {
+	padding: 13px;
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, border-color 0.3s ease; 
+	border-color: #ccc;
+	background-color: #fff;
 }
 #listOfCommands, #listOfCommandsEvent, #prefixOfCommands, #adminOfCommands {
-  border: none !important;
+	border: none !important;
 }
 
-#listOfCommands:not(.modal), #listOfCommandsEvent:not(.modal), #prefixOfCommands:not(.modal), #adminOfCommands:not(.modal) {
-  box-shadow: none !important;
+#listOfCommands:not(.modal), #listOfCommandsEvent:not(.modal), #prefixOfCommands:not(.modal),
+#adminOfCommands:not(.modal) {
+	box-shadow: none !important;
 }
 
+div {
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    padding: 20px;
+  }
